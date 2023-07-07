@@ -35,7 +35,8 @@ header nav .info-left ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  /* margin: 0; */
+  margin: 0;
+  padding: 0;
 }
 
 header nav .info-left ul li {
@@ -78,7 +79,7 @@ header nav .botones a button {
 
 /* estilos del contenido del body */
 .home-main {
-  background-color: #7d1128;
+  background-color: #ab2340;
   height: 100%;
 }
 
@@ -88,6 +89,7 @@ header nav .botones a button {
   font-weight: bold;
   color: #ffe5d4;
   margin: 0;
+  text-transform: uppercase;
 }
 
 .home-main .lorem-img {
@@ -101,9 +103,12 @@ header nav .botones a button {
 }
 .home-main .lorem-img .lorem-left h2 {
   color: #ffe5d4;
+  font-weight: bold;
 }
 .home-main .lorem-img .lorem-left h3 {
   color: #ffe5d4;
+  font-size: 20px;
+  padding-right:  200px;
 }
 
 .home-main .lorem-img .imagenes-right{
