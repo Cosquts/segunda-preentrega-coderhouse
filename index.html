@@ -6,12 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
     <title>Home</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
+    <!-- el header contiene un nav > 3 div (info/logo/botones) -->
     <header>
       <nav>
-        <div class="info">
+        <div class="info-left">
           <ul>
             <li>
               <a href="pages/contacto.html">Contacto</a>
@@ -25,13 +31,13 @@
           </ul>
         </div>
 
-        <div class="logo">
+        <div class="logo-inicio">
           <a href="index.html" class="content-logo"
             ><img src="img/logo.png" alt="Logo del home"
           /></a>
         </div>
 
-        <div class="btn">
+        <div class="botones">
           <a href="pages/login.html">
             <button>Iniciar sesión</button>
           </a>
@@ -45,9 +51,10 @@
     <main class="home-main">
       <!-- le puse una clase al main para no mezclar los estilos de los main de otros html -->
 
-      <h1 class="title">Lorem ipsum dolor sit amet</h1>
+      <h1 class="titulo">Lorem ipsum dolor sit amet</h1>
 
-      <section>
+      <div class="lorem-img">
+      <section class="lorem-left">
         <h2>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro nam
           quod impedit, facere quae
@@ -59,26 +66,28 @@
           illum modi odio nihil laudantium eaque, est reiciendis qui eos.
         </h3>
       </section>
-
-      <div class="img-container">
+<!-- uso un poco de "spanglish" para tratar de no hacer conflicto con las clases de bootrap -->
+      <div class="imagenes-right ">
         <img
-          class="img-1"
+          class="imagen-1"
           src="img/celular barba.png"
           alt="Usuario usando su ceular"
         />
         <img
-          class="img-2"
+          class="imagen-2"
           src="img/laptop barba.png"
           alt="Usuario usando su laptop"
         />
-      </div>
+         </div>
+
+    </div>
     </main>
 
-    <footer>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus
-        quae laudantium repellendus molestias architecto veniam voluptatum
-      </p>
-    </footer>
   </body>
+  <footer >
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus
+      quae laudantium repellendus molestias architecto veniam voluptatum
+    </p>
+  </footer>
 </html>
