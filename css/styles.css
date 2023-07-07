@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;1,300&display=swap');
+
+
+html{
+    height: 100%; /* le di al html el alto de toda la pagina para que el body puedo ocupar todo su espacio  */
+}
+
+body{
+    height: 100vh; 
+    background-color: rgb(226, 212, 194);
+}
+
+main{
+    background-color: rgb(226, 212, 194);
+    
+}
+
+
+header{
+    height: 80px; 
+    background-color: orangered;
+    position: relative; /* para poder acomodar los 3 contenedores dentro del header */
+    }
+
+header nav{
+    display: inline-block;
+    /* con esto posicione */
+    position: absolute; 
+    left: 5%;
+    top: 40%;
+    }
+
+header nav ul li{
+    display: inline-block; /* para posisionar los textos uno al lado del otro */
+    margin: 0 10px;
+}
+
+header nav ul li a{
+    color: ghostwhite;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: transform 0.3s;
+}
+
+header nav ul li a:hover{
+    color: rgb(234, 240, 51);
+}
+
+header .content-logo{ 
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    height: 80px; /* para que el logo home tenga el mismo alto que el header */
+    left: 45%;
+    background-color: aliceblue;
+    border-radius: 50%;
+}
+
+header a.content-logo img{
+  height: 100%;
+  border-radius: 50%;
+}
+
+.btn {
+    display: inline-block;
+    right: 4%;
+    margin: 20px 0;
+    position: absolute; 
+}
+
+.btn button{
+    padding: 12px 30px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.btn button:hover{
+    transform: scale(1.3)
+}
+
+.title{
+   text-align: center;
+   padding: 20px;
+   font-size: 45px;  
+}
+
+.home-main{
+    height: 100%; /* le di altura y ancho al main porque cuando ponia su contenido en absolute, este mismo perdia su tamaño */
+    width: 100%;
+    position: relative;
+    /* text-align: center; */
+    
+}
+ .home-main section{ 
+    display: inline-block;
+    position: absolute;
+    padding: 30px;
+    margin: 30px auto;
+    width: 40%; 
+    left: 6%;
+    font-size: 25px;
+    height: auto;   
+ }
+
+ .home-main section h2, main.home-main section h3{
+    display: inline-block;
+    width: 90%;
+    text-align: center;
+ }
+
+ main .img-container{   
+    width: 40%;
+    height: auto;
+    right: 0;
+    position: absolute;
+    margin: 30px auto;   
+ }
+
+ main .img-container img{
+    width: 250px;
+    height: 250px;
+    border-radius: 80px;
+}
+    
+/* con las clases por separado de las img y jugando con los margenes laterales le agregue un poco de posiciones */
+
+.img-1{
+    margin-left: 50%;
+}
+
+.img-2{
+    margin-right: 50%;
+}
+
+ footer{
+    background-color: orangered;
+    text-align: center;
+    width: 100%;
+    bottom:0;
+    height: 80px;
+ }
+
+ footer p{
+    color: ghostwhite;
+    padding-top: 2.5%
+ }
+
+ /* ESTILOS DE "sobrenosotos.html" */
+
+
+/* este main lo hice diferente al .main-home porque aca no voy a usar position*/
+.sn-main{
+    background-color: rgb(226, 212, 194);
+    
+}
+
+ .sn-main img{
+    width: 400px;
+    margin: 5%;
+    margin-left: 10%;
+    border: 2px slategrey solid;
+    display: inline-block;
+}
+
+.sn-main .bio{
+    display: inline-block;
+    width: 40%;
+    margin: 5%;
+    position: absolute; /* tuve un problema con .bio, si no lo pongo en absolute no me queda al lado de la imagen y no entiendo porque, quisiera que me expliquen porfa*/ 
+}
+
+.sn-main .bio h2{
+    margin-bottom: 5%;
+    text-decoration: underline 3px black;
+}
+
+/* estilos de "login.html" */
+
+
+.login {
+    border: 1px solid black;
+    text-align: center;
+    margin: 10% 35%;
+
+}
+
+.login h2{
+    display: block;
+    margin-bottom: 2%;
+}
+
+.login input{
+    display: inline-block;
+    margin-bottom: 3%;
+}
+
+.login a{
+    display: block;
+    color: red;
+    text-decoration: none;
+    margin-bottom: 3%;
+}
+.login h4{
+    width: 100%;
+    margin: 5% 0;
+}
+
+.login h4 a{
+    display: inline;
+    text-decoration: none;
+    color: green;
+}
+/* estilos del sign up */
+
+.sign *{
+    margin-bottom: 3%;
+}
+.sign{
+    border: 1px solid black;
+    text-align: center;
+    margin: 10% 35%;
+}
+.sign h3{
+    display: block;
+    
+}
+.sign input{
+    display: inline-block;
+   
+}
+
+.sign h4 a{
+    display: inline;
+    text-decoration: none;
+    color: green;
+}
+
+/* estilos de "contacto.html" */
+
+.contact-main{
+    text-align: center;
+}
+.contact-main h1{
+    text-align: center;
+    padding-top: 1%;
+    padding-right:3%;
+    text-decoration: underline;
+}
+
+.contact-main .datos, .ubi {
+    display: inline-block;
+    width: 40%;
+    margin: 2% 1%;
+}
+
+.datos *{ 
+    margin: 1%;
+    
+}
+.datos .apps{
+    color: darkgreen;
+    display: inline;
+}
+
+.tu-msj input, textarea{
+    display: block;
+    
+    
+}
+
+
+
