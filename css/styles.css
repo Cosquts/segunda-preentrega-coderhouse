@@ -11,6 +11,10 @@ body {
   position: relative;
 }
 
+main{
+  height: 100vh;
+}
+
 header {
   width: 100%;
   height: 80px;
