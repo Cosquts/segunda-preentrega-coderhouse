@@ -236,6 +236,34 @@ main.contact-main aside.ubi {
   padding: 10%;
 }
 
+/* estilos para sobrenosotros.html */
+
+main.sn-main{
+  display: grid;
+  grid-template-columns: 1fr 11fr;
+  background-color: #ab2340;
+}
+main.sn-main div.titulo{
+  grid-column: 1/3;
+  text-align: center;
+  color: #ffe5d4;
+}
+main.sn-main div.bio{
+  grid-column: 2/3;
+  grid-row: 2/3;
+  padding: 5%;
+  color: #ffe5d4;
+}
+
+main.sn-main img{
+  width: 500px;
+  height: 500px;
+  grid-column: 1/2;
+  grid-row: 2/3;
+  padding: 5%;
+  border-radius: 50px;
+}
+
 @media screen and (max-width: 450px) {
   header nav .info-left {
     display: none;
@@ -283,8 +311,8 @@ main.contact-main aside.ubi {
   }
   main.home-main div.lorem-img div.imagenes-right img.imagen-1,
   main.home-main div.lorem-img div.imagenes-right img.imagen-2 {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     padding: 0;
   }
   main.home-main div.lorem-img section.lorem-left h3 {
@@ -296,6 +324,20 @@ main.contact-main aside.ubi {
   main.home-main div.lorem-img div.imagenes-right {
     display: none;
   }
+
+   /* estilos de sobrenosotros mobile */
+   main.sn-main{
+    display: flex;
+    flex-direction: column;
+  }
+  
+
+  main.sn-main img{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 100px;
+  }
 }
 
 @media screen and (min-width: 451px) {
@@ -306,4 +348,6 @@ main.contact-main aside.ubi {
   main.home-main div.lorem-img section.lorem-left div.imagenes-right {
     display: none;
   }
+
+ 
 }
