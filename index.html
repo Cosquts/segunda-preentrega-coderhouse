@@ -16,10 +16,10 @@
         <div class="info-left">
           <ul>
             <li>
-              <a href="contacto.html">Contacto</a>
+              <a href="pages/contacto.html">Contacto</a>
             </li>
             <li>
-              <a href="sobrenosotros.html">Sobre Nosotros</a>
+              <a href="pages/sobrenosotros.html">Sobre Nosotros</a>
             </li>
             <li>
               <a href="../index.html">Inicio</a>
@@ -33,17 +33,45 @@
           /></a>
         </div>
 
+        
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                
+              </button>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <button class="btn btn-success ">Iniciar sesión</button>
+                <button class="btn btn-danger ">Registrarse</button>      
+                <li><a class="dropdown-item" href="#">Contacto</a></li>
+                <li><a class="dropdown-item" href="#">Sobre nosotros</a></li>
+              </ul>
+            </li>
+          </ul>
+        
+
         <div class="botones">
           <a href="pages/login.html">
-            <button class="btn btn-success btn-outline-light btn-lg">Iniciar sesión</button>
+            <button class="btn btn-success btn-outline-light">Iniciar sesión</button>
           </a>
           <a href="pages/signup.html">
-            <button class="btn btn-danger btn-outline-light btn-lg">Registrarse</button>
+            <button class="btn btn-danger btn-outline-light">Registrarse</button>
           </a>
         </div>
       </nav>
     </header>
+<!-- m
+a
+i
+n
+-
+-
+-
+-
+-
 
+-
+-
+-->
     <main class="home-main">
       <!-- le puse una clase al main para no mezclar los estilos de los main de otros html -->
 
@@ -55,6 +83,21 @@
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro nam
           quod impedit, facere quae
         </h2>
+
+        <!-- son las mismas imagenes, pero las puse en medio del h2 y el h3 para que quede en el medio en la version mobile -->
+
+        <div class="imagenes-right">
+          <img
+            class="imagen-1"
+            src="img/celular barba.png"
+            alt="Usuario usando su ceular"
+          />
+          <img
+            class="imagen-2"
+            src="img/laptop barba.png"
+            alt="Usuario usando su laptop"
+          />
+           </div>
 
         <h3>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat hic
@@ -82,8 +125,7 @@
   </body>
   <footer >
     <p>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus
-      quae laudantium repellendus molestias architecto veniam voluptatum
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
     </p>
   </footer>
 </html>

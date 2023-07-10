@@ -144,3 +144,76 @@ footer p {
   line-height: 60px;
   margin: 0;
 }
+
+@media screen and (max-width: 450px) {
+  header nav .info-left {
+    display: none;
+  }
+  header nav {
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+  }
+  header nav .botones {
+    display: none;
+  }
+  header nav .navbar-nav ul.dropdown-menu {
+    background-color: #0a0f0d;
+  }
+  header nav .navbar-nav ul li,
+  header nav .navbar-nav ul button {
+    margin-bottom: 10px;
+  }
+  main.home-main h1.titulo {
+    font-size: 20px;
+    padding: 11px 100px;
+    margin: 0;
+  }
+  main.home-main div.lorem-img {
+    display: block;
+  }
+  main.home-main div.lorem-img section.lorem-left {
+    padding: 0;
+    display: block;
+    text-align: center;
+    font-size: 5px;
+    width: auto;
+  }
+  main.home-main div.lorem-img section.lorem-left h2 {
+    text-align: center;
+    padding: 0;
+  }
+  main.home-main div.lorem-img section.lorem-left div.imagenes-right {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 0;
+    width: auto;
+  }
+  main.home-main div.lorem-img div.imagenes-right img.imagen-1,
+  main.home-main div.lorem-img div.imagenes-right img.imagen-2 {
+    width: 200px;
+    height: 200px;
+    padding: 0;
+  }
+  main.home-main div.lorem-img section.lorem-left h3 {
+    text-align: center;
+    padding: 0 0 40px 0;
+    margin: 10px 0 0 0;
+  }
+
+  main.home-main div.lorem-img div.imagenes-right {
+    display: none;
+  }
+  
+}
+
+@media screen and (min-width: 451px) {
+  header ul.navbar-nav {
+    display: none;
+  }
+
+  main.home-main div.lorem-img section.lorem-left div.imagenes-right {
+    display: none;
+  }
+}
