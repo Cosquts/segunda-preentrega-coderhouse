@@ -67,14 +67,14 @@ header nav .botones {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+
 }
 
 header nav .botones a button {
   color: #ffe5d4;
-  background-color: #739e82;
+  /* background-color: #739e82; */
   border-radius: 5px;
-  height: 40px;
-  width: 150px;
+ 
 }
 
 /* estilos del contenido del body */
